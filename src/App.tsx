@@ -15,16 +15,10 @@ export const App: FunctionComponent = () => {
       <main className="wrapper-content">
         <img src="./assets/images/flower.gif" alt="flower" className="background-image"/>
         <Routes>
-          <Route path="catalog" element={<Catalog />} />
-        </Routes>
-        <Routes>
-          <Route path="advices" element={<Advices />} />
-        </Routes>
-        <Routes>
-          <Route path="gallery" element={<Gallery />} />
-        </Routes>
-        <Routes>
-          <Route path="about-us" element={<AboutUs />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/advices" element={<Advices />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </main>
     </BrowserRouter>

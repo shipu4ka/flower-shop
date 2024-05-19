@@ -8,16 +8,16 @@ export const Header = () => {
       <nav>
         <ul className="header-list">
           <li>
-            <Link to="catalog">Каталог</Link>
+            <Link to="/catalog">Каталог</Link>
           </li>
           <li>
-            <Link to="advices">Советы</Link>
+            <Link to="/advices">Советы</Link>
           </li>
           <li>
-            <Link to="gallery">Галерея</Link>
+            <Link to="/gallery">Галерея</Link>
           </li>
           <li>
-            <Link to="about-us">О компании</Link>
+            <Link to="/about-us">О компании</Link>
           </li>
         </ul>
       </nav>

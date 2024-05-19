@@ -66,7 +66,7 @@ export const Advices = () => {
   return (
     <div>
       {mockedAdvices.map((mockedAdvice) => {
-        return <AdviceCard advice={mockedAdvice}/>
+        return <AdviceCard advice={mockedAdvice} key={mockedAdvice.situation}/>
       })}
     </div>
   );
