@@ -12,6 +12,18 @@ module.exports = {
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
       { test: /\.(js|jsx)$/, use: "babel-loader" },
       { test: /\.(ts|tsx)$/, use: "ts-loader" },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images/',
+              name: '[name][hash].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   output: {
@@ -20,6 +32,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

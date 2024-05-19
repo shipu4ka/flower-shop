@@ -1,0 +1,25 @@
+.header-list {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    
+    li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.header {
+    
+    height: 30px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.header-image {
+    max-width: 300px;
+}
