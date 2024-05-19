@@ -1,0 +1,40 @@
+.catalog-flowers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.catalog-card {
+    background-color: #ffffffdb;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+.catalog-image {
+  height: 100px;
+}
+
+.catalog-description {
+    padding-top: 10px;
+}
+
+.catalog-price {
+    font-size: 20px;
+    color: blueviolet;
+    margin: 10px;
+}
+
+.catalog-btn {
+    width: 80px;
+    height: 25px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid rgb(15, 117, 83);
+}
